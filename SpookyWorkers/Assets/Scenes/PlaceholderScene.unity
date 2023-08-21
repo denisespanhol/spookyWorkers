@@ -2049,7 +2049,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1978941129
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2175,6 +2175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedWalk: 4
+  jumpForce: 6
 --- !u!1 &2049090888
 GameObject:
   m_ObjectHideFlags: 0
