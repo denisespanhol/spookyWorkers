@@ -5,7 +5,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     #region VARIABLES
+
+    [Header("Movement Setup")]
     [SerializeField] private float speedWalk = 2f;
+    [SerializeField] private float jumpForce;
 
     private Rigidbody2D playerRigidbody2D;
 
@@ -19,6 +22,7 @@ public class Player : MonoBehaviour
     private void Update()
     {
         HandleMovement();
+        HandleJump();
     }
 
     // function to control the players horizontal movement
@@ -32,6 +36,14 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             playerRigidbody2D.velocity = new Vector2(-speedWalk, playerRigidbody2D.velocity.y);
+        }
+    }
+
+    private void HandleJump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            playerRigidbody2D.velocity = Vector2.up * jumpForce;
         }
     }
 
