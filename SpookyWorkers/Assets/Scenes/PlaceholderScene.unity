@@ -2303,7 +2303,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1978941127}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a50444026df41034b959d67d221ac71d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2351,10 +2351,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7cac2d183c06d044b69d2e03137314c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  friction: {x: -1, y: 0}
+  groundCheck: {fileID: 1500257508}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  groundCheck: {fileID: 1500257508}
   groundCheckRadius: 0.3
   speedWalk: 4
   jumpForce: 6

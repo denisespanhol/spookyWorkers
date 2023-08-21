@@ -7,8 +7,9 @@ public class Player : MonoBehaviour
     #region VARIABLES
 
     [Header("Movement Setup")]
-    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Vector2 friction;
     [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckRadius;
     [SerializeField] private float speedWalk = 2f;
     [SerializeField] private float jumpForce;
@@ -44,6 +45,10 @@ public class Player : MonoBehaviour
         {
             _playerRigidbody2D.velocity = new Vector2(-speedWalk, _playerRigidbody2D.velocity.y);
         }
+
+        // Conditionals to stabilize the player without friction in the floors;
+        if (_playerRigidbody2D.velocity.x > 0) _playerRigidbody2D.velocity += friction;
+        if (_playerRigidbody2D.velocity.x < 0) _playerRigidbody2D.velocity -= friction;
     }
 
     // function to the player jump if them its not in the air
