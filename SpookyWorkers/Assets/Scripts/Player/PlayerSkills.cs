@@ -12,9 +12,11 @@ public class PlayerSkills : MonoBehaviour
     [SerializeField] private float scaryRange;
 
     private Player _playerScript;
+    private GameManager _gameManagerScript;
     private Collider2D[] hitClients;
     private bool _isScarySkillReady = true;
     private float secondsToScaryAgain = 2f;
+    private string clientScaredTag = "clientScared";
 
     // DOTween variables
     private float duration = 2f;
@@ -28,6 +30,7 @@ public class PlayerSkills : MonoBehaviour
     private void Awake()
     {
         _playerScript = GetComponent<Player>();
+        _gameManagerScript = GameObject.Find("Game Manager").GetComponent<GameManager>();
 
         DOTween.Init();
     }
@@ -55,7 +58,13 @@ public class PlayerSkills : MonoBehaviour
             _isScarySkillReady = false;
             StartCoroutine(scaryInterval());
 
-            foreach (Collider2D client in hitClients) Debug.Log("We hit " + client.name);
+            foreach (Collider2D client in hitClients)
+            {
+                foreach (GameObject clientObject in _gameManagerScript.clientObjects)
+                {
+                    if (client.name == clientObject.name) clientObject.tag = clientScaredTag;
+                } 
+            }
         }
     }
 

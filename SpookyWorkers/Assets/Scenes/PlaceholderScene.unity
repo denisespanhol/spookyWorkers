@@ -727,6 +727,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &723683935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 723683936}
+  m_Layer: 0
+  m_Name: Scary Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &723683936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723683935}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.23, y: 0.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1978941130}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &824139837
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +840,7 @@ GameObject:
   - component: {fileID: 946219374}
   - component: {fileID: 946219375}
   m_Layer: 0
-  m_Name: dresserCheck
+  m_Name: Dresser Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1058,7 +1089,7 @@ GameObject:
   - component: {fileID: 1100065172}
   - component: {fileID: 1100065171}
   - component: {fileID: 1100065170}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Client1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1530,7 +1561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309218697}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.009, y: -0.058, z: -0.053}
+  m_LocalPosition: {x: 0.04, y: -0.06, z: -0.053}
   m_LocalScale: {x: 0.012488506, y: 0.7314381, z: 0.38595137}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1600,7 +1631,7 @@ GameObject:
   - component: {fileID: 1500257508}
   - component: {fileID: 1500257509}
   m_Layer: 0
-  m_Name: groundCheck
+  m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2033,7 +2064,7 @@ GameObject:
   - component: {fileID: 1797038743}
   - component: {fileID: 1797038742}
   - component: {fileID: 1797038741}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Client2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2322,6 +2353,7 @@ GameObject:
   - component: {fileID: 1978941128}
   - component: {fileID: 1978941131}
   - component: {fileID: 1978941132}
+  - component: {fileID: 1978941133}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2416,12 +2448,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978941127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.54, y: -3.63, z: -2}
+  m_LocalPosition: {x: 4.97, y: -3.32, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1500257508}
   - {fileID: 946219374}
+  - {fileID: 723683936}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2482,6 +2515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7cac2d183c06d044b69d2e03137314c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isWearingTheCostume: 0
   friction: {x: -1, y: 0}
   speedWalk: 4
   jumpForce: 6
@@ -2497,6 +2531,23 @@ MonoBehaviour:
   dresserCheckRadius: 0.6
   costumeON: {r: 1, g: 0.41117916, b: 0, a: 1}
   costumeOFF: {r: 0.5529412, g: 0, b: 1, a: 1}
+--- !u!114 &1978941133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978941127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac9d9ba84df0fe4b8216ebda536d07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clientLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  scaryPoint: {fileID: 723683936}
+  scaryRange: 2
 --- !u!1 &2049090888
 GameObject:
   m_ObjectHideFlags: 0
