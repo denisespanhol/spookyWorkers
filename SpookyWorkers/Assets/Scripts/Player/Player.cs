@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 {
     #region VARIABLES
 
+    public bool isWearingTheCostume = false;
+
     [Header("Movement Setup")]
     [SerializeField] private Vector2 friction;
     [SerializeField] private float speedWalk = 2f;
@@ -31,18 +33,6 @@ public class Player : MonoBehaviour
     private SpriteRenderer _playerSpriteRenderer;
     private bool _isTouchingTheFloor;
     private bool _isTouchingTheDresser;
-    private bool _isWearingtheCostume = false;
-    private bool _isScarySkillReady = true;
-    private float secondsToScaryAgain = 2f;
-
-    // DOTween variables
-    private float duration = 2f;
-    private float strength = 2f;
-    private float randomness = 60;
-    private int vibrato = 10;
-    private bool fadeOut = true;
-    private ShakeRandomnessMode randomnessMode = ShakeRandomnessMode.Harmonic;
-
 
     #endregion
 
@@ -50,8 +40,6 @@ public class Player : MonoBehaviour
     {
         _playerRigidbody2D = GetComponent<Rigidbody2D>();
         _playerSpriteRenderer = GetComponent<SpriteRenderer>();
-
-        DOTween.Init();
     }
 
     private void Update()
@@ -59,7 +47,6 @@ public class Player : MonoBehaviour
         HandleMovement();
         HandleJump();
         HandlePutCustome();
-        HandleScary();
 
         // the Physics2D.OverlapCircle return a boolean: true if the groundCheck object inside the Player object is touching the floor and false if its not
         _isTouchingTheFloor = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
@@ -100,35 +87,17 @@ public class Player : MonoBehaviour
     {
         if (_isTouchingTheDresser)
         {
-            if (Input.GetKeyDown(KeyCode.W) && !_isWearingtheCostume)
+            if (Input.GetKeyDown(KeyCode.W) && !isWearingTheCostume)
             {
                 _playerSpriteRenderer.color = costumeON;
-                _isWearingtheCostume = true;
+                isWearingTheCostume = true;
             }
-            else if (Input.GetKeyDown(KeyCode.W) && _isWearingtheCostume)
+            else if (Input.GetKeyDown(KeyCode.W) && isWearingTheCostume)
             {
                 _playerSpriteRenderer.color = costumeOFF;
-                _isWearingtheCostume = false;
+                isWearingTheCostume = false;
             }
         }
-    }
-
-    // Function that allow the player to scary clients when P is pressed
-    private void HandleScary()
-    {
-        if (Input.GetKeyDown(KeyCode.P) && _isWearingtheCostume && _isScarySkillReady)
-        {
-            transform.DOShakeScale(duration, strength, vibrato, randomness, fadeOut, randomnessMode);
-            _isScarySkillReady = false;
-            StartCoroutine(scaryInterval());
-        }
-    }
-
-    private IEnumerator scaryInterval()
-    {
-        yield return new WaitForSeconds(secondsToScaryAgain);
-
-        _isScarySkillReady = true;
     }
 
 }
