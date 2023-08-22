@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Player : MonoBehaviour
 {
@@ -32,12 +33,23 @@ public class Player : MonoBehaviour
     private bool _isTouchingTheDresser;
     private bool _isWearingtheCostume = false;
 
+    // DOTween variables
+    private float duration = 2f;
+    private float strength = 2f;
+    private float randomness = 60;
+    private int vibrato = 10;
+    private bool fadeOut = true;
+    private ShakeRandomnessMode randomnessMode = ShakeRandomnessMode.Harmonic;
+
+
     #endregion
 
     private void Awake()
     {
         _playerRigidbody2D = GetComponent<Rigidbody2D>();
         _playerSpriteRenderer = GetComponent<SpriteRenderer>();
+
+        DOTween.Init();
     }
 
     private void Update()
@@ -45,6 +57,7 @@ public class Player : MonoBehaviour
         HandleMovement();
         HandleJump();
         HandlePutCustome();
+        HandleScary();
 
         // the Physics2D.OverlapCircle return a boolean: true if the groundCheck object inside the Player object is touching the floor and false if its not
         _isTouchingTheFloor = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
@@ -95,6 +108,15 @@ public class Player : MonoBehaviour
                 _playerSpriteRenderer.color = costumeOFF;
                 _isWearingtheCostume = false;
             }
+        }
+    }
+
+    // Function that allow the player to scary clients when P is pressed
+    private void HandleScary()
+    {
+        if (Input.GetKeyDown(KeyCode.P) && _isWearingtheCostume)
+        {
+            transform.DOShakeScale(duration, strength, vibrato, randomness, fadeOut, randomnessMode);
         }
     }
 
