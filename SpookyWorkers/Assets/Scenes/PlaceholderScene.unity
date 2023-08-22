@@ -2194,7 +2194,7 @@ GameObject:
   - component: {fileID: 1978941132}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2352,13 +2352,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   friction: {x: -1, y: 0}
-  groundCheck: {fileID: 1500257508}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  groundCheck: {fileID: 1500257508}
   groundCheckRadius: 0.3
   speedWalk: 4
   jumpForce: 6
+  costumeON: {r: 1, g: 0.41117916, b: 0, a: 1}
+  costumeOFF: {r: 0.5529412, g: 0, b: 1, a: 1}
 --- !u!1 &2049090888
 GameObject:
   m_ObjectHideFlags: 0

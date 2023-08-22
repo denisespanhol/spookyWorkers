@@ -8,26 +8,35 @@ public class Player : MonoBehaviour
 
     [Header("Movement Setup")]
     [SerializeField] private Vector2 friction;
-    [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius;
     [SerializeField] private float speedWalk = 2f;
     [SerializeField] private float jumpForce;
 
+    [Header("Sprite Setup")]
+    [SerializeField] private Color costumeON;
+    [SerializeField] private Color costumeOFF;
+
+
     private Rigidbody2D _playerRigidbody2D;
+    private SpriteRenderer _playerSpriteRenderer;
     private bool _isTouchingTheFloor;
+    private bool _isWearingtheCostume = false;
 
     #endregion
 
     private void Awake()
     {
         _playerRigidbody2D = GetComponent<Rigidbody2D>();
+        _playerSpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
         HandleMovement();
         HandleJump();
+        HandlePutCustome();
 
         // the Physics2D.OverlapCircle return a boolean: true if the groundCheck object inside the Player object is touching the floor and false if its not
         _isTouchingTheFloor = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
@@ -57,6 +66,22 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && _isTouchingTheFloor)
         {
             _playerRigidbody2D.velocity = Vector2.up * jumpForce;
+        }
+    }
+
+    private void HandlePutCustome()
+    {
+        if (Input.GetKeyDown(KeyCode.W) && !_isWearingtheCostume)
+        {
+            _playerSpriteRenderer.color = costumeON;
+            _isWearingtheCostume = true;
+            Debug.Log("On");
+        }
+        else if (Input.GetKeyDown(KeyCode.W) && _isWearingtheCostume)
+        {
+            _playerSpriteRenderer.color = costumeOFF;
+            _isWearingtheCostume = false;
+            Debug.Log("Off");
         }
     }
 
