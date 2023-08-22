@@ -49,9 +49,8 @@ public class Player : MonoBehaviour
         // the Physics2D.OverlapCircle return a boolean: true if the groundCheck object inside the Player object is touching the floor and false if its not
         _isTouchingTheFloor = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
+        // the Physics2D.OverlapCircle return a boolean: true if the dresserCheck object inside the Player is touching the dresser object in the scene
         _isTouchingTheDresser = Physics2D.OverlapCircle(dresserCheck.position, dresserCheckRadius, dresserLayer);
-
-        if (_isTouchingTheDresser) Debug.Log("true");
     }
 
     // function to control the players horizontal movement
@@ -81,6 +80,7 @@ public class Player : MonoBehaviour
         }
     }
 
+    // function that allow the player put the terror costume to scary the clients, if its close to a dresser
     private void HandlePutCustome()
     {
         if (_isTouchingTheDresser)
@@ -89,13 +89,11 @@ public class Player : MonoBehaviour
             {
                 _playerSpriteRenderer.color = costumeON;
                 _isWearingtheCostume = true;
-                Debug.Log("On");
             }
             else if (Input.GetKeyDown(KeyCode.W) && _isWearingtheCostume)
             {
                 _playerSpriteRenderer.color = costumeOFF;
                 _isWearingtheCostume = false;
-                Debug.Log("Off");
             }
         }
     }
