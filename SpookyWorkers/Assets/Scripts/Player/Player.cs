@@ -32,6 +32,8 @@ public class Player : MonoBehaviour
     private bool _isTouchingTheFloor;
     private bool _isTouchingTheDresser;
     private bool _isWearingtheCostume = false;
+    private bool _isScarySkillReady = true;
+    private float secondsToScaryAgain = 2f;
 
     // DOTween variables
     private float duration = 2f;
@@ -114,10 +116,19 @@ public class Player : MonoBehaviour
     // Function that allow the player to scary clients when P is pressed
     private void HandleScary()
     {
-        if (Input.GetKeyDown(KeyCode.P) && _isWearingtheCostume)
+        if (Input.GetKeyDown(KeyCode.P) && _isWearingtheCostume && _isScarySkillReady)
         {
             transform.DOShakeScale(duration, strength, vibrato, randomness, fadeOut, randomnessMode);
+            _isScarySkillReady = false;
+            StartCoroutine(scaryInterval());
         }
+    }
+
+    private IEnumerator scaryInterval()
+    {
+        yield return new WaitForSeconds(secondsToScaryAgain);
+
+        _isScarySkillReady = true;
     }
 
 }
