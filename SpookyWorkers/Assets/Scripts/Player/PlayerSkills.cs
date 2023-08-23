@@ -6,6 +6,8 @@ using DG.Tweening;
 public class PlayerSkills : MonoBehaviour
 {
     #region VARIABLES
+    public string clientScaredTag = "clientScared";
+
     [Header("Scary's Setup")]
     [SerializeField] private LayerMask clientLayers;
     [SerializeField] private Transform scaryPoint;
@@ -16,7 +18,6 @@ public class PlayerSkills : MonoBehaviour
     private Collider2D[] hitClients;
     private bool _isScarySkillReady = true;
     private float secondsToScaryAgain = 2f;
-    private string clientScaredTag = "clientScared";
 
     // DOTween variables
     private float duration = 2f;
