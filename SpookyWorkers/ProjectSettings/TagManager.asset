@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - clientScared
+  - client
   layers:
   - Default
   - TransparentFX
