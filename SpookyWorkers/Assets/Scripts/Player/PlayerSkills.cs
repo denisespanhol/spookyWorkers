@@ -32,6 +32,7 @@ public class PlayerSkills : MonoBehaviour
         _playerScript = GetComponent<Player>();
         _gameManagerScript = GameObject.Find("Game Manager").GetComponent<GameManager>();
 
+        // Initializing Dotween
         DOTween.Init();
     }
 
@@ -40,6 +41,7 @@ public class PlayerSkills : MonoBehaviour
         skillToScary();
     }
 
+    // Function to draw a circle in the scary point area, in unity scene
     private void OnDrawGizmosSelected()
     {
         if (scaryPoint == null) return;
@@ -49,7 +51,8 @@ public class PlayerSkills : MonoBehaviour
 
     // Function that allow the player to scary clients when P is pressed
     private void skillToScary()
-    {
+    {   
+        // Capture all the colliders2D inside the scary point area
         hitClients = Physics2D.OverlapCircleAll(scaryPoint.position, scaryRange, clientLayers);
 
         if (Input.GetKeyDown(KeyCode.P) && _playerScript.isWearingTheCostume && _isScarySkillReady)
@@ -58,6 +61,7 @@ public class PlayerSkills : MonoBehaviour
             _isScarySkillReady = false;
             StartCoroutine(scaryInterval());
 
+            // Compares the Collider2D object names with the name of the clients gameObject in the Game Manager 
             foreach (Collider2D client in hitClients)
             {
                 foreach (GameObject clientObject in _gameManagerScript.clientObjects)
@@ -68,6 +72,7 @@ public class PlayerSkills : MonoBehaviour
         }
     }
 
+    // Coroutine to put an interval in the scary skill use
     private IEnumerator scaryInterval()
     {
         yield return new WaitForSeconds(secondsToScaryAgain);
