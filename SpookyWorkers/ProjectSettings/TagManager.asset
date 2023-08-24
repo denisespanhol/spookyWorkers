@@ -7,6 +7,7 @@ TagManager:
   - Floor
   - clientScared
   - client
+  - Door
   layers:
   - Default
   - TransparentFX

@@ -65,10 +65,17 @@ public class PlayerSkills : MonoBehaviour
             // Compares the Collider2D object names with the name of the clients gameObject in the Game Manager 
             foreach (Collider2D client in hitClients)
             {
-                foreach (GameObject clientObject in _gameManagerScript.clientObjects)
+                if (client == null) return;
+
+                else
                 {
-                    if (client.name == clientObject.name) clientObject.tag = clientScaredTag;
-                } 
+                    foreach (GameObject clientObject in _gameManagerScript.clientObjects)
+                    {
+                        if (clientObject == null) return;
+
+                        else if (client.name == clientObject.name) clientObject.tag = clientScaredTag;
+                    }
+                }
             }
         }
     }

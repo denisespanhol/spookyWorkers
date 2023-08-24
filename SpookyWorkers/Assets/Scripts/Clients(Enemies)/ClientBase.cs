@@ -20,6 +20,13 @@ public class ClientBase : MonoBehaviour
     private void Update()
     {
         ClientsScared();
+
+        Physics2D.IgnoreLayerCollision(7, 7);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Door")) gameObject.SetActive(false);
     }
 
     private void ClientsScared()
