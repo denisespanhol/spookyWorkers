@@ -21,14 +21,17 @@ public class ClientBase : MonoBehaviour
     {
         ClientsScared();
 
+        // All objects with the layer Client will not collide with each other
         Physics2D.IgnoreLayerCollision(7, 7);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Desactivate the clients when they collide with the door
         if (collision.CompareTag("Door")) gameObject.SetActive(false);
     }
 
+    // Function to move the clients to the door when they get scared, using the tag as a comparator
     private void ClientsScared()
     {
         if (tag == _playerSkillsScript.clientScaredTag)
