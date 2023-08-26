@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject[] clientObjects;
 
+    [SerializeField] private GameObject gameOverObject;
     private GameObject _playerObject;
 
     private void Awake()
@@ -20,6 +21,6 @@ public class GameManager : MonoBehaviour
 
     private void GameOver()
     {
-        if (!_playerObject.activeInHierarchy) Debug.Log("Game Over");
+        if (!_playerObject.activeInHierarchy) gameOverObject.SetActive(true);
     }
 }
