@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         _playerObject = GameObject.Find("Player");
+
     }
 
     private void Update()
