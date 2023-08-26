@@ -55,6 +55,14 @@ public class Player : MonoBehaviour
         _isTouchingTheDresser = Physics2D.OverlapCircle(dresserCheck.position, dresserCheckRadius, dresserLayer);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
     // function to control the players horizontal movement
     private void HandleMovement()
     {
