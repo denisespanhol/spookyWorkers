@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D _playerRigidbody2D;
     private SpriteRenderer _playerSpriteRenderer;
+    private GameManager _gameManagerScript;
     private bool _isTouchingTheFloor;
     private bool _isTouchingTheDresser;
 
@@ -40,19 +41,23 @@ public class Player : MonoBehaviour
     {
         _playerRigidbody2D = GetComponent<Rigidbody2D>();
         _playerSpriteRenderer = GetComponent<SpriteRenderer>();
+        _gameManagerScript = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     private void Update()
     {
-        HandleMovement();
-        HandleJump();
-        HandlePutCustome();
+        if (!_gameManagerScript.isGamePaused)
+        {
+            HandleMovement();
+            HandleJump();
+            HandlePutCustome();
 
-        // the Physics2D.OverlapCircle return a boolean: true if the groundCheck object inside the Player object is touching the floor and false if its not
-        _isTouchingTheFloor = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+            // the Physics2D.OverlapCircle return a boolean: true if the groundCheck object inside the Player object is touching the floor and false if its not
+            _isTouchingTheFloor = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // the Physics2D.OverlapCircle return a boolean: true if the dresserCheck object inside the Player is touching the dresser object in the scene
-        _isTouchingTheDresser = Physics2D.OverlapCircle(dresserCheck.position, dresserCheckRadius, dresserLayer);
+            // the Physics2D.OverlapCircle return a boolean: true if the dresserCheck object inside the Player is touching the dresser object in the scene
+            _isTouchingTheDresser = Physics2D.OverlapCircle(dresserCheck.position, dresserCheckRadius, dresserLayer);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
