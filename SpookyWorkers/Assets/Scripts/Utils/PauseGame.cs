@@ -6,8 +6,6 @@ public class PauseGame : MonoBehaviour
 {
     public void Pause()
     {
-        Time.timeScale = 1 - Time.timeScale;
-
         if (Time.timeScale == 0) Time.timeScale = 1;
 
         else if (Time.timeScale == 1) Time.timeScale = 0;
