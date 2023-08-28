@@ -893,6 +893,7 @@ MonoBehaviour:
   - {fileID: 1797038739}
   isGamePaused: 0
   gameOverObject: {fileID: 1903983216}
+  pausedGameObject: {fileID: 2028420354}
 --- !u!4 &457079433
 Transform:
   m_ObjectHideFlags: 0
@@ -3877,7 +3878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2028420355
 RectTransform:
   m_ObjectHideFlags: 0
