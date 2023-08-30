@@ -1,0 +1,658 @@
+fileFormatVersion: 2
+guid: cd14b8bbb740330478f2aad54f3f3745
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_Toddy_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1183
+        width: 90
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669ab0ee998548b4082561921a7171d8
+      internalID: 1122794478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1183
+        width: 107
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9937da50a0adf6b4da989f2a52d58bd0
+      internalID: -47750797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_2
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1183
+        width: 90
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb04bc343d941341bbf19884a6e2cd0
+      internalID: 1634755707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_3
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1183
+        width: 84
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb63730fe56ba184abcd7066736166ad
+      internalID: -1969019763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_4
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1183
+        width: 98
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e56cb03aa49044ea1895bb1f47857a
+      internalID: -196824057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_5
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1183
+        width: 90
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1644f5dc143b6d94bb84115a9523fa8d
+      internalID: -788198398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 839
+        width: 82
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47eb8dc15d2c893498cb555349fd825f
+      internalID: 729812592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_11
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 799
+        width: 90
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aff8116a64e20d4f8bbc6c69b558798
+      internalID: 199631801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_12
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 799
+        width: 90
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28eff3477ffff0c49ae5c579543544fa
+      internalID: 1639800933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_13
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 799
+        width: 140
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c468f4a5c003e48a9ff363eff5ea65
+      internalID: -71010590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_14
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 799
+        width: 107
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c778c53991adde04bbec0643fd909fbe
+      internalID: -361749571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_15
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 799
+        width: 84
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8556ed28d47803f49bbeb885f609e7a9
+      internalID: 1071360391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_22
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 799
+        width: 91
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f5ff92ee9c85a409acd04894991011
+      internalID: 437785988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_23
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 799
+        width: 74
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2673bd7aab6db38428ec311a2b1dd0fd
+      internalID: 442380392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_24
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 799
+        width: 91
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0bd08c08461a440ab5879b0776f4e9
+      internalID: -2045345225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toddy_Idle01
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 471
+        width: 90
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88eef63d5f8a9bf418a3f44152180dfe
+      internalID: -388130499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_50
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 471
+        width: 91
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4145e9f9c42db41aa6c60aa20fcfda
+      internalID: 662070828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_51
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 471
+        width: 90
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d560ba989de6124aa5f6fabedfa3e04
+      internalID: 68409348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_52
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 471
+        width: 91
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2145c0c1949047d45b6cc364ee701340
+      internalID: -1786275036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Toddy_53
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 471
+        width: 90
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3c8e3f254c0794d8ff3d4ce74a3baf
+      internalID: 1772093531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Atlas_Toddy_0: 1122794478
+      Atlas_Toddy_1: -47750797
+      Atlas_Toddy_10: 729812592
+      Atlas_Toddy_11: 199631801
+      Atlas_Toddy_12: 1639800933
+      Atlas_Toddy_13: -71010590
+      Atlas_Toddy_14: -361749571
+      Atlas_Toddy_15: 1071360391
+      Atlas_Toddy_16: 32838793
+      Atlas_Toddy_17: 1813934487
+      Atlas_Toddy_18: 797504316
+      Atlas_Toddy_19: 195530060
+      Atlas_Toddy_2: 1634755707
+      Atlas_Toddy_20: 1908648224
+      Atlas_Toddy_21: 1688820071
+      Atlas_Toddy_22: 437785988
+      Atlas_Toddy_23: 442380392
+      Atlas_Toddy_24: -2045345225
+      Atlas_Toddy_25: 922415034
+      Atlas_Toddy_26: -947581433
+      Atlas_Toddy_27: -1602349847
+      Atlas_Toddy_28: 298193809
+      Atlas_Toddy_29: -1160287684
+      Atlas_Toddy_3: -1969019763
+      Atlas_Toddy_30: -98441271
+      Atlas_Toddy_31: -436540676
+      Atlas_Toddy_32: -2132233622
+      Atlas_Toddy_33: 1341152413
+      Atlas_Toddy_34: -191126643
+      Atlas_Toddy_35: -1491365174
+      Atlas_Toddy_36: 731281139
+      Atlas_Toddy_37: 2029574490
+      Atlas_Toddy_38: -872163016
+      Atlas_Toddy_39: -48962004
+      Atlas_Toddy_4: -196824057
+      Atlas_Toddy_40: -2085721585
+      Atlas_Toddy_41: 304460457
+      Atlas_Toddy_42: 806684901
+      Atlas_Toddy_43: -1275505375
+      Atlas_Toddy_44: -1763715131
+      Atlas_Toddy_45: -2065626896
+      Atlas_Toddy_46: -459475713
+      Atlas_Toddy_47: 668464030
+      Atlas_Toddy_48: 2132061629
+      Atlas_Toddy_5: -788198398
+      Atlas_Toddy_50: 662070828
+      Atlas_Toddy_51: 68409348
+      Atlas_Toddy_52: -1786275036
+      Atlas_Toddy_53: 1772093531
+      Atlas_Toddy_54: -609344349
+      Atlas_Toddy_55: 1788461770
+      Atlas_Toddy_56: -1778094987
+      Atlas_Toddy_57: 1429959595
+      Atlas_Toddy_58: 2027616537
+      Atlas_Toddy_6: 1979078718
+      Atlas_Toddy_7: 1999547193
+      Atlas_Toddy_8: 1532139970
+      Atlas_Toddy_9: 1428244811
+      Toddy_Idle01: -388130499
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
