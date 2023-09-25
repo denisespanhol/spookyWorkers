@@ -27,11 +27,13 @@ public class Player : MonoBehaviour
     [Header("Sprite Setup")]
     [SerializeField] private Color costumeON;
     [SerializeField] private Color costumeOFF;
+    [SerializeField] private float spriteSize = 0.8f;
 
 
     private Rigidbody2D _playerRigidbody2D;
     private SpriteRenderer _playerSpriteRenderer;
     private GameManager _gameManagerScript;
+    private Animator _animator;
     private bool _isTouchingTheFloor;
     private bool _isTouchingTheDresser;
 
@@ -41,6 +43,7 @@ public class Player : MonoBehaviour
     {
         _playerRigidbody2D = GetComponent<Rigidbody2D>();
         _playerSpriteRenderer = GetComponent<SpriteRenderer>();
+        _animator = GetComponent<Animator>();
         _gameManagerScript = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
@@ -74,12 +77,18 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             _playerRigidbody2D.velocity = new Vector2(speedWalk, _playerRigidbody2D.velocity.y);
+            _animator.SetBool("isWalking", true);
+            transform.localScale = new Vector2(spriteSize, transform.localScale.y);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
             _playerRigidbody2D.velocity = new Vector2(-speedWalk, _playerRigidbody2D.velocity.y);
+            _animator.SetBool("isWalking", true);
+            transform.localScale = new Vector2(-spriteSize, transform.localScale.y);
         }
+
+        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A)) _animator.SetBool("isWalking", false);
 
         // Conditionals to stabilize the player without friction in the floors;
         if (_playerRigidbody2D.velocity.x > 0) _playerRigidbody2D.velocity += friction;
