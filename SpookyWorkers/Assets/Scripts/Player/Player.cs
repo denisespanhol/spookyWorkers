@@ -36,6 +36,7 @@ public class Player : MonoBehaviour
     private Animator _animator;
     private bool _isTouchingTheFloor;
     private bool _isTouchingTheDresser;
+    private bool _isAnimationToJumpOn = false;
 
     #endregion
 
@@ -101,6 +102,18 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && _isTouchingTheFloor)
         {
             _playerRigidbody2D.velocity = Vector2.up * jumpForce;
+        }
+
+        if (!_isTouchingTheFloor)
+        {
+            _animator.SetTrigger("jump");
+            _isAnimationToJumpOn = true;
+        }
+
+        if (_isTouchingTheFloor && _isAnimationToJumpOn)
+        {
+            _animator.SetTrigger("landing");
+            _isAnimationToJumpOn = false;
         }
     }
 

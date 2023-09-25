@@ -984,6 +984,7 @@ GameObject:
   - component: {fileID: 641411513}
   - component: {fileID: 641411514}
   - component: {fileID: 641411515}
+  - component: {fileID: 641411516}
   m_Layer: 3
   m_Name: BookPlatform01
   m_TagString: Floor
@@ -1088,7 +1089,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0.06620121, y: 0.02291584}
   m_SpriteTilingProperty:
@@ -1103,6 +1104,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3690586, y: 0.51416826}
   m_EdgeRadius: 0
+--- !u!251 &641411516
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641411512}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 125.82
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &683187127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,7 +1360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &824139838
 Transform:
   m_ObjectHideFlags: 0
@@ -2315,6 +2335,7 @@ GameObject:
   - component: {fileID: 1401796443}
   - component: {fileID: 1401796444}
   - component: {fileID: 1401796445}
+  - component: {fileID: 1401796446}
   m_Layer: 3
   m_Name: BookPlatform02
   m_TagString: Floor
@@ -2419,7 +2440,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0.06620121, y: 0.035646796}
   m_SpriteTilingProperty:
@@ -2434,6 +2455,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3996124, y: 0.48870635}
   m_EdgeRadius: 0
+--- !u!251 &1401796446
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401796442}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 125.82
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1450182788
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,6 +2686,7 @@ GameObject:
   - component: {fileID: 1519163976}
   - component: {fileID: 1519163977}
   - component: {fileID: 1519163978}
+  - component: {fileID: 1519163979}
   m_Layer: 3
   m_Name: BookPlatform03
   m_TagString: Floor
@@ -2750,7 +2791,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0.070753574, y: 0.039622128}
   m_SpriteTilingProperty:
@@ -2765,6 +2806,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4007292, y: 0.4807557}
   m_EdgeRadius: 0
+--- !u!251 &1519163979
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519163975}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 125.82
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1580003081
 GameObject:
   m_ObjectHideFlags: 0
