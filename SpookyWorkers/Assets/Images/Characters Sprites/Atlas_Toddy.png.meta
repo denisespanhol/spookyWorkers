@@ -162,7 +162,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Atlas_Toddy_0
+      name: Toddy_walk01
       rect:
         serializedVersion: 2
         x: 79
@@ -170,7 +170,7 @@ TextureImporter:
         width: 90
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,7 +183,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_1
+      name: Toddy_walk02
       rect:
         serializedVersion: 2
         x: 230
@@ -191,7 +191,7 @@ TextureImporter:
         width: 107
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -204,15 +204,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_2
+      name: Toddy_walk03
       rect:
         serializedVersion: 2
-        x: 439
+        x: 449
         y: 1183
         width: 90
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -225,7 +225,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_3
+      name: Toddy_walk04
       rect:
         serializedVersion: 2
         x: 614
@@ -233,7 +233,7 @@ TextureImporter:
         width: 84
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,7 +246,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_4
+      name: Toddy_walk05
       rect:
         serializedVersion: 2
         x: 767
@@ -254,7 +254,7 @@ TextureImporter:
         width: 98
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -267,7 +267,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_5
+      name: Toddy_walk06
       rect:
         serializedVersion: 2
         x: 927
@@ -275,7 +275,7 @@ TextureImporter:
         width: 90
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -288,7 +288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_10
+      name: Toddy_jump01
       rect:
         serializedVersion: 2
         x: 79
@@ -296,7 +296,7 @@ TextureImporter:
         width: 82
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -309,7 +309,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_11
+      name: Toddy_jump02
       rect:
         serializedVersion: 2
         x: 207
@@ -317,7 +317,7 @@ TextureImporter:
         width: 90
         height: 259
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -330,7 +330,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_12
+      name: Toddy_jump03
       rect:
         serializedVersion: 2
         x: 359
@@ -338,7 +338,7 @@ TextureImporter:
         width: 90
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -351,7 +351,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_13
+      name: Toddy_jump04
       rect:
         serializedVersion: 2
         x: 478
@@ -359,7 +359,7 @@ TextureImporter:
         width: 140
         height: 266
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -372,7 +372,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_14
+      name: Toddy_jump05
       rect:
         serializedVersion: 2
         x: 654
@@ -380,7 +380,7 @@ TextureImporter:
         width: 107
         height: 259
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -393,7 +393,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_15
+      name: Toddy_jump06
       rect:
         serializedVersion: 2
         x: 806
@@ -401,7 +401,7 @@ TextureImporter:
         width: 84
         height: 259
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -414,7 +414,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_22
+      name: Toddy_jump07
       rect:
         serializedVersion: 2
         x: 1415
@@ -422,7 +422,7 @@ TextureImporter:
         width: 91
         height: 266
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -435,7 +435,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_23
+      name: Toddy_jump08
       rect:
         serializedVersion: 2
         x: 1535
@@ -443,7 +443,7 @@ TextureImporter:
         width: 74
         height: 274
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -456,15 +456,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_24
+      name: Toddy_jump09
       rect:
         serializedVersion: 2
-        x: 1647
+        x: 1645
         y: 799
         width: 91
         height: 266
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -485,7 +485,7 @@ TextureImporter:
         width: 90
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -498,7 +498,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_50
+      name: Toddy_Idle02
       rect:
         serializedVersion: 2
         x: 183
@@ -506,7 +506,7 @@ TextureImporter:
         width: 91
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -519,7 +519,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_51
+      name: Toddy_Idle03
       rect:
         serializedVersion: 2
         x: 303
@@ -527,7 +527,7 @@ TextureImporter:
         width: 90
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -540,7 +540,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_52
+      name: Toddy_Idle04
       rect:
         serializedVersion: 2
         x: 422
@@ -548,7 +548,7 @@ TextureImporter:
         width: 91
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -561,7 +561,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_Toddy_53
+      name: Toddy_Idle05
       rect:
         serializedVersion: 2
         x: 551
@@ -569,7 +569,7 @@ TextureImporter:
         width: 90
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -592,30 +592,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Atlas_Toddy_0: 1122794478
-      Atlas_Toddy_1: -47750797
-      Atlas_Toddy_10: 729812592
-      Atlas_Toddy_11: 199631801
-      Atlas_Toddy_12: 1639800933
-      Atlas_Toddy_13: -71010590
-      Atlas_Toddy_14: -361749571
-      Atlas_Toddy_15: 1071360391
       Atlas_Toddy_16: 32838793
       Atlas_Toddy_17: 1813934487
       Atlas_Toddy_18: 797504316
       Atlas_Toddy_19: 195530060
-      Atlas_Toddy_2: 1634755707
       Atlas_Toddy_20: 1908648224
       Atlas_Toddy_21: 1688820071
-      Atlas_Toddy_22: 437785988
-      Atlas_Toddy_23: 442380392
-      Atlas_Toddy_24: -2045345225
       Atlas_Toddy_25: 922415034
       Atlas_Toddy_26: -947581433
       Atlas_Toddy_27: -1602349847
       Atlas_Toddy_28: 298193809
       Atlas_Toddy_29: -1160287684
-      Atlas_Toddy_3: -1969019763
       Atlas_Toddy_30: -98441271
       Atlas_Toddy_31: -436540676
       Atlas_Toddy_32: -2132233622
@@ -626,7 +613,6 @@ TextureImporter:
       Atlas_Toddy_37: 2029574490
       Atlas_Toddy_38: -872163016
       Atlas_Toddy_39: -48962004
-      Atlas_Toddy_4: -196824057
       Atlas_Toddy_40: -2085721585
       Atlas_Toddy_41: 304460457
       Atlas_Toddy_42: 806684901
@@ -636,11 +622,6 @@ TextureImporter:
       Atlas_Toddy_46: -459475713
       Atlas_Toddy_47: 668464030
       Atlas_Toddy_48: 2132061629
-      Atlas_Toddy_5: -788198398
-      Atlas_Toddy_50: 662070828
-      Atlas_Toddy_51: 68409348
-      Atlas_Toddy_52: -1786275036
-      Atlas_Toddy_53: 1772093531
       Atlas_Toddy_54: -609344349
       Atlas_Toddy_55: 1788461770
       Atlas_Toddy_56: -1778094987
@@ -651,6 +632,25 @@ TextureImporter:
       Atlas_Toddy_8: 1532139970
       Atlas_Toddy_9: 1428244811
       Toddy_Idle01: -388130499
+      Toddy_Idle02: 662070828
+      Toddy_Idle03: 68409348
+      Toddy_Idle04: -1786275036
+      Toddy_Idle05: 1772093531
+      Toddy_jump01: 729812592
+      Toddy_jump02: 199631801
+      Toddy_jump03: 1639800933
+      Toddy_jump04: -71010590
+      Toddy_jump05: -361749571
+      Toddy_jump06: 1071360391
+      Toddy_jump07: 437785988
+      Toddy_jump08: 442380392
+      Toddy_jump09: -2045345225
+      Toddy_walk01: 1122794478
+      Toddy_walk02: -47750797
+      Toddy_walk03: 1634755707
+      Toddy_walk04: -1969019763
+      Toddy_walk05: -196824057
+      Toddy_walk06: -788198398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
